@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Kwerendy.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CompanyName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TestCompanyName</Value>
+    </Setting>
+    <Setting Name="AddressLine1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ul. Test 1/2</Value>
+    </Setting>
+    <Setting Name="AddressLine2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00-111 Test</Value>
+    </Setting>
+    <Setting Name="CompanyPhoneNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">000111222</Value>
+    </Setting>
+    <Setting Name="CompanyEmailAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">test@mail.com</Value>
+    </Setting>
+    <Setting Name="CompanyBankAccount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">000011112222333344445555</Value>
+    </Setting>
+    <Setting Name="LeadTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2 miesiące</Value>
+    </Setting>
+    <Setting Name="EntryFee" Type="System.String" Scope="User">
+      <Value Profile="(Default)">110</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
