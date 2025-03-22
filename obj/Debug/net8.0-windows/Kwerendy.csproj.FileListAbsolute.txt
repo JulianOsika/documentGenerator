@@ -58,3 +58,4 @@ C:\Users\Julo\Desktop\IT\Kwerendy\obj\Debug\net8.0-windows\Kwerendy.csproj.Up2Da
 C:\Users\Julo\Desktop\IT\Kwerendy\obj\Debug\net8.0-windows\Kwerendy.ArchiveDataSettingsForm.resources
 C:\Users\Julo\Desktop\IT\Kwerendy\obj\Debug\net8.0-windows\Kwerendy.Properties.Resources.resources
 C:\Users\Julo\Desktop\IT\Kwerendy\bin\Debug\net8.0-windows\Kwerendy.dll.config
+C:\Users\Julo\Desktop\IT\Kwerendy\obj\Debug\net8.0-windows\Kwerendy.sourcelink.json

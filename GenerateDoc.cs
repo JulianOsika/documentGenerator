@@ -31,6 +31,10 @@ namespace Kwerendy
                 doc.InsertParagraph().InsertPageBreakAfterSelf();
                 doc.InsertParagraph().InsertPageBreakAfterSelf();
 
+                instructionsPageTemplate.FillPage(doc, entry);
+                doc.InsertParagraph().InsertPageBreakAfterSelf();
+                doc.InsertParagraph().InsertPageBreakAfterSelf();
+
                 if ( !entry.Description.Contains("@") )
                 {
                     requestPageTemplate.FillPage(doc, entry);

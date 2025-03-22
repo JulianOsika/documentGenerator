@@ -20,14 +20,14 @@ namespace Kwerendy
 
             //header isnt't needed so i used normal 
             var hp1 = document.InsertParagraph();
-                hp1.Append($"{Properties.Settings.Default.CompanyName}", basicFormatting).Bold();
+                hp1.Append($"{Properties.Settings.Default.CompanyName}", basicFormatting).FontSize(15).Bold();
 
             var hp2 = document.InsertParagraph();
-            hp2.Append($"{Properties.Settings.Default.AddressLine1}     " +
-                        $"{Properties.Settings.Default.AddressLine2}     " +
-                        $"tel. {Properties.Settings.Default.CompanyPhoneNumber}     " +
-                        $"email: {Properties.Settings.Default.CompanyEmailAddress}"
-                        + "\n" + $"Konto: {Properties.Settings.Default.CompanyBankAccount}",
+            hp2.Append($"{Properties.Settings.Default.AddressLine1}, " +
+                        $"{Properties.Settings.Default.AddressLine2}, " +
+                        $"tel. {Properties.Settings.Default.CompanyPhoneNumber}, \n" +
+                        $"email: {Properties.Settings.Default.CompanyEmailAddress}\n" +
+                        $"Konto: {Properties.Settings.Default.CompanyBankAccount}",
                         basicFormatting)
                     .Bold()
                     .Alignment = Alignment.left;
@@ -73,7 +73,7 @@ namespace Kwerendy
 
             var p3 = document.InsertParagraph();
             p3.Append(
-                $"Poniżej przedstawiamy krok po kroku jak wygląda procedura " +
+                $"    Poniżej przedstawiamy krok po kroku jak wygląda procedura " +
                 $"wydania dokumentacji z naszego archiwum:", basicFormatting).Alignment = Alignment.both;
 
 
@@ -107,15 +107,17 @@ namespace Kwerendy
                 $"3. Aktualnie przybliżony czas realizacji kwerendy wynosi " +
                 $"około {Properties.Settings.Default.LeadTime} od momentu wpłynięcia " +
                 $"opłaty na nasze konto.", basicFormatting);
+            p6.Alignment = Alignment.both;
 
 
 
             var p7 = document.InsertParagraph();
             p7.Append("4. Po przeprowadzeniu kwerendy poinformujemy o wysokości ", basicFormatting);
-            p7.Append("drugiej", basicFormatting).Bold().UnderlineStyle(UnderlineStyle.singleLine);
+            p7.Append("drugiej", basicFormatting).Bold();
             p7.Append(
                 " opłaty. Wysokość drugiej opłaty jest zależna od wyniku poszukiwań oraz " +
                 "ilości i postaci dokumentacji.", basicFormatting);
+            p7.Alignment = Alignment.both;
 
 
 
@@ -123,6 +125,7 @@ namespace Kwerendy
             p8.Append(
                 "5. Po uiszczeniu drugiej opłaty wysyłamy dokumenty listem poleconym w przeciągu " +
                 "maksymalnie 5 dni roboczych od momentu wpłynięcia opłaty na nasze konto.", basicFormatting);
+            p8.Alignment = Alignment.both;
             p8.SpacingAfter(10);
 
 

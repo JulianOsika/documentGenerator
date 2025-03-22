@@ -39,6 +39,7 @@
             daneArchiwumToolStripMenuItem = new ToolStripMenuItem();
             daneUżytkownikaToolStripMenuItem = new ToolStripMenuItem();
             statusLabel = new Label();
+            ustawieniaToolStripMenuItem1 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)grid1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -114,7 +115,7 @@
             // 
             // ustawieniaToolStripMenuItem
             // 
-            ustawieniaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { daneArchiwumToolStripMenuItem, daneUżytkownikaToolStripMenuItem });
+            ustawieniaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { daneArchiwumToolStripMenuItem, daneUżytkownikaToolStripMenuItem, ustawieniaToolStripMenuItem1 });
             ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
             ustawieniaToolStripMenuItem.Size = new Size(95, 24);
             ustawieniaToolStripMenuItem.Text = "Ustawienia";
@@ -122,14 +123,14 @@
             // daneArchiwumToolStripMenuItem
             // 
             daneArchiwumToolStripMenuItem.Name = "daneArchiwumToolStripMenuItem";
-            daneArchiwumToolStripMenuItem.Size = new Size(212, 26);
+            daneArchiwumToolStripMenuItem.Size = new Size(224, 26);
             daneArchiwumToolStripMenuItem.Text = "Dane archiwum";
             daneArchiwumToolStripMenuItem.Click += daneArchiwumToolStripMenuItem_Click;
             // 
             // daneUżytkownikaToolStripMenuItem
             // 
             daneUżytkownikaToolStripMenuItem.Name = "daneUżytkownikaToolStripMenuItem";
-            daneUżytkownikaToolStripMenuItem.Size = new Size(212, 26);
+            daneUżytkownikaToolStripMenuItem.Size = new Size(224, 26);
             daneUżytkownikaToolStripMenuItem.Text = "Dane użytkownika";
             // 
             // statusLabel
@@ -141,6 +142,12 @@
             statusLabel.Size = new Size(206, 28);
             statusLabel.TabIndex = 7;
             statusLabel.Text = "Kliknij aby wybrać plik";
+            // 
+            // ustawieniaToolStripMenuItem1
+            // 
+            ustawieniaToolStripMenuItem1.Name = "ustawieniaToolStripMenuItem1";
+            ustawieniaToolStripMenuItem1.Size = new Size(224, 26);
+            ustawieniaToolStripMenuItem1.Text = "Ustawienia";
             // 
             // Form1
             // 
@@ -179,5 +186,6 @@
         private ToolStripMenuItem daneArchiwumToolStripMenuItem;
         private ToolStripMenuItem daneUżytkownikaToolStripMenuItem;
         private Label statusLabel;
+        private ToolStripMenuItem ustawieniaToolStripMenuItem1;
     }
 }

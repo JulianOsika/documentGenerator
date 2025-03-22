@@ -55,8 +55,8 @@ namespace Kwerendy
 
             Paragraph p4 = document.InsertParagraph();
             p4.Append("Informacje o zatrudnieniu\n", basicFormatting).Bold();
-            p4.Append("Pełna nazwa zakładu i miejscowość głównej siedziby" +
-                "\n..." +
+            p4.Append("Pełna nazwa zakładu i miejscowość głównej siedziby \n" +
+                "..." +
                 "\n...\n", basicFormatting);
             p4.Append("Okres zatrudnienia:\n", basicFormatting);
             p4.LineSpacing = basicLineSpacing;
@@ -81,9 +81,11 @@ namespace Kwerendy
             p6.SpacingAfter(basicSpacingAfter);
 
             Paragraph p7 = document.InsertParagraph();
-            p7.Append("Oświadczam, że zapoznałem się z regulaminem oraz informacją o przetwarzaniu " +
-                "danych osobowych.", basicFormatting);
-            p7.LineSpacing = basicLineSpacing;
+            p7.Append(
+                "Oświadczam, że podane przeze mnie dane są prawdziwe i jestem osobą upoważnioną do ich " +
+                "otrzymania. Zapoznałem/am się z regulaminem oraz z informacją o przetwarzaniu danych osobowych."
+                , basicFormatting).Alignment = Alignment.both;
+            p7.LineSpacing = 12;
             p7.SpacingAfter(40);
 
             var signatureTab = document.AddTable(2, 3);

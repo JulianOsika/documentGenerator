@@ -34,8 +34,9 @@ namespace Kwerendy
             p2.AddText(
                 $"{Properties.Settings.Default.AddressLine1}, " +
                 $"{Properties.Settings.Default.AddressLine2}, " +
-                $"{Properties.Settings.Default.CompanyPhoneNumber}"
-                + "\n" + $"{Properties.Settings.Default.CompanyBankAccount}");
+                $"tel. {Properties.Settings.Default.CompanyPhoneNumber},\n" +
+                $"email: {Properties.Settings.Default.CompanyEmailAddress}"
+                + "\n" + $"Konto: {Properties.Settings.Default.CompanyBankAccount}");
             p2.Format.Font.Bold = true;
             p2.Format.Alignment = ParagraphAlignment.Left;
 
@@ -70,20 +71,20 @@ namespace Kwerendy
 
             Row row0 = table.AddRow();
             row0.Cells[1].AddParagraph("Sz. P.");
-            row0.Cells[1].AddParagraph($"{entry.Name}");
+            var nameParagraph = row0.Cells[1].AddParagraph();
+            nameParagraph.AddText(
+                $"{entry.Name}\n" +
+                $"{entry.AdressL1}\n" +
+                $"{entry.AdressL2}");
+            nameParagraph.Format.Alignment = ParagraphAlignment.Left;
 
             table.AddRow();
             table.AddRow();
-
-
-            // SPACE
-            Paragraph parBlank2 = section.AddParagraph();
-            parBlank2.Format.SpaceAfter = 10;
 
 
             // SPACE
             Paragraph parBlank3 = section.AddParagraph();
-            parBlank3.Format.SpaceAfter = 20;
+            parBlank3.Format.SpaceAfter = 15;
 
             Paragraph p3 = section.AddParagraph();
             p3.AddText(
@@ -109,8 +110,8 @@ namespace Kwerendy
             p6.AddText(
                 "2. Aby wniosek został przyjęty należy opłacić pierwszą z dwóch opłat za kwerendę " +
                 "(tj. poszukiwanie dokumentacji) w wysokości ");
-            p6.AddFormattedText($"{Properties.Settings.Default.EntryFee}", TextFormat.Bold);
-            p6.AddText($"w przeciągu 60 dni kalendarzowych od dnia {DateTime.Today.Date.ToShortDateString()}. ");
+            p6.AddFormattedText($"{Properties.Settings.Default.EntryFee} zł", TextFormat.Bold);
+            p6.AddText($" w przeciągu 60 dni kalendarzowych od dnia {DateTime.Today.Date.ToShortDateString()}. ");
             p6.AddFormattedText($"! Uwaga !", TextFormat.Bold);
             p6.AddText(" – przy dokonywaniu wpłat ");
             p6.AddFormattedText($"konieczne", TextFormat.Bold);
